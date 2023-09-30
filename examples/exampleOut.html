@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Florian Hunecke" />
+  <title>Example Document</title>
+  <style>
+    /* <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at home.in.tum.de Port 443</address>
+</body></html> */
+    /* html{line-height:1.5;font-family:Georgia,serif;font-size:20px;color:#1a1a1a;background-color:#fdfdfd;}body{margin:0auto;max-width:36em;padding-left:50px;padding-right:50px;padding-top:50px;padding-bottom:50px;hyphens:auto;overflow-wrap:break-word;text-rendering:optimizeLegibility;font-kerning:normal;}@media(max-width:600px){body{font-size:0.9em;padding:1em;}h1{font-size:1.8em;}}@mediaprint{body{background-color:transparent;color:black;font-size:12pt;}p,h2,h3{orphans:3;widows:3;}h2,h3,h4{page-break-after:avoid;}}p{margin:1em0;}a{color:#1a1a1a;}a:visited{color:#1a1a1a;}img{max-width:100%;}h1,h2,h3,h4,h5,h6{margin-top:1.4em;}h5,h6{font-size:1em;font-style:italic;}h6{font-weight:normal;}ol,ul{padding-left:1.7em;margin-top:1em;}li>ol,li>ul{margin-top:0;}blockquote{margin:1em01em1.7em;padding-left:1em;border-left:2pxsolid#e6e6e6;color:#606060;}code{font-family:Menlo,Monaco,'LucidaConsole',Consolas,monospace;font-size:85%;margin:0;}pre{margin:1em0;overflow:auto;}precode{padding:0;overflow:visible;overflow-wrap:normal;}.sourceCode{background-color:transparent;overflow:visible;}hr{background-color:#1a1a1a;border:none;height:1px;margin:1em0;}table{margin:1em0;border-collapse:collapse;width:100%;overflow-x:auto;display:block;font-variant-numeric:lining-numstabular-nums;}tablecaption{margin-bottom:0.75em;}tbody{margin-top:0.5em;border-top:1pxsolid#1a1a1a;border-bottom:1pxsolid#1a1a1a;}th{border-top:1pxsolid#1a1a1a;padding:0.25em0.5em0.25em0.5em;}td{padding:0.125em0.5em0.25em0.5em;}header{margin-bottom:4em;text-align:center;}#TOCli{list-style:none;}#TOCul{padding-left:1.3em;}#TOC>ul{padding-left:0;}#TOCa:not(:hover){text-decoration:none;}code{white-space:pre-wrap;}span.smallcaps{font-variant:small-caps;}div.columns{display:flex;gap:min(4vw,1.5em);}div.column{flex:auto;overflow-x:auto;}div.hanging-indent{margin-left:1.5em;text-indent:-1.5em;}ul.task-list{list-style:none;}ul.task-listliinput[type="checkbox"]{width:0.8em;margin:00.8em0.2em-1.6em;vertical-align:middle;}pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */ */
+  </style>
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/vs2015.min.css">
+<link rel="stylesheet" href="https://home.in.tum.de/~hunecke/md-template/template.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+  <!-- <div class="side-section">
+  </div> -->
+  <div class="main-section">
+              <header id="title-block-header">
+      <h1 class="title">Example Document</h1>
+                    <p class="author">Florian Hunecke</p>
+                    <p class="date">Sat Sep 30 2023</p>
+            </header>
+              <nav id="TOC" role="doc-toc">
+                  <h2 id="toc-title">Contents</h2>
+                <ul>
+                <li><a href="#markdown-features"><span class="toc-section-number">1</span> Markdown Features</a></li>
+                <li><a href="#media"><span class="toc-section-number">2</span> Media</a></li>
+                <li><a href="#code"><span class="toc-section-number">3</span> Code</a></li>
+                <li><a href="#mermaid"><span class="toc-section-number">4</span> Mermaid</a></li>
+                <li><a href="#maths"><span class="toc-section-number">5</span> Maths</a></li>
+                <li><a href="#tables"><span class="toc-section-number">6</span> Tables</a></li>
+                <li><a href="#columns"><span class="toc-section-number">7</span> Columns</a></li>
+                <li><a href="#sidenotes"><span class="toc-section-number">8</span> Sidenotes</a></li>
+                <li><a href="#styling"><span class="toc-section-number">9</span> <span class="underline smallcaps">Styling</span></a></li>
+                <li><a href="#references-and-footnotes"><span class="toc-section-number">10</span> References and Footnotes</a></li>
+                </ul>
+      </nav>
+      <!-- side toc -->
+      <input type="checkbox" id="toc-toggle" class="toc-toggle"/>
+      <div class="side-toc">
+        <a id="sidetoc-backlink" href="#" onclick="location.href = document.referrer; return false;">&larr; Back</a>
+                  <h2 id="toc-title">Contents</h2>
+                <ul>
+                <li><a href="#markdown-features"><span class="toc-section-number">1</span> Markdown Features</a></li>
+                <li><a href="#media"><span class="toc-section-number">2</span> Media</a></li>
+                <li><a href="#code"><span class="toc-section-number">3</span> Code</a></li>
+                <li><a href="#mermaid"><span class="toc-section-number">4</span> Mermaid</a></li>
+                <li><a href="#maths"><span class="toc-section-number">5</span> Maths</a></li>
+                <li><a href="#tables"><span class="toc-section-number">6</span> Tables</a></li>
+                <li><a href="#columns"><span class="toc-section-number">7</span> Columns</a></li>
+                <li><a href="#sidenotes"><span class="toc-section-number">8</span> Sidenotes</a></li>
+                <li><a href="#styling"><span class="toc-section-number">9</span> <span class="underline smallcaps">Styling</span></a></li>
+                <li><a href="#references-and-footnotes"><span class="toc-section-number">10</span> References and Footnotes</a></li>
+                </ul>
+        <!-- <footer>test</footer> -->
+      </div>
+      <label for="toc-toggle" class="toc-toggle-label">
+        <span></span>
+      </label>
+        <h1 data-number="1" id="markdown-features"><span class="header-section-number">1</span> Markdown Features</h1>
+        <p>Use basic <strong>Markdown</strong> <em>formatting</em> to create <strong><em>rich</em></strong> text.</p>
+        <blockquote>
+        <p>Blockquotes are very handy for <strong>highlighting</strong>.</p>
+        </blockquote>
+        <ol type="1">
+        <li>Lists</li>
+        <li>are</li>
+        <li>also great</li>
+        </ol>
+        <!-- Use html syntax to comment -->
+        <!-- and to separate two lists -->
+        <ul>
+        <li>unordered</li>
+        <li>lists
+        <ul>
+        <li>and nested</li>
+        <li>lists</li>
+        </ul></li>
+        <li>as well</li>
+        </ul>
+        <dl>
+        <dt>Use Definitions:</dt>
+        <dd><ul>
+        <li>To declare, define or explain something</li>
+        <li>Use is up to you</li>
+        </ul>
+        </dd>
+        </dl>
+        <h1 data-number="2" id="media"><span class="header-section-number">2</span> Media</h1>
+        <p>Insert images like this:</p>
+        <div class="row">
+        <p><img src="https://picsum.photos/400/180" alt="Image with caption" /><br />
+        </p>
+        <figure>
+        <img src="https://picsum.photos/400/200" style="width:70.0%" alt="Image with caption" /><figcaption aria-hidden="true">Image with caption</figcaption>
+        </figure>
+        </div>
+        <p>You can also inline images and set their size <img src="https://www.thegreenhead.com/imgs/star-wars-baby-yoda-child-life-size-replica-figure-1.jpg" id="id" class="class" height="50" alt="image" /> to make them fit better.</p>
+        <p>Links are also supported: <a href="https://www.google.com">Link</a></p>
+        <h1 data-number="3" id="code"><span class="header-section-number">3</span> Code</h1>
+        <p>Of course, you can also insert code blocks of any kind:</p>
+        <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello_world():</span>
+        <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello World!&quot;</span>)</span></code></pre></div>
+        <h1 data-number="4" id="mermaid"><span class="header-section-number">4</span> Mermaid</h1>
+        <p>You can use Mermaid to create diagrams:</p>
+        <pre class="mermaid"><code>graph TD;
+            A--&gt;B;
+            A--&gt;C;
+            B--&gt;D;
+            C--&gt;D;</code></pre>
+        <h1 data-number="5" id="maths"><span class="header-section-number">5</span> Maths</h1>
+        <p>You can also use LaTeX to render maths:</p>
+        <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right"><mover><mi>x</mi><mo accent="true">̇</mo></mover></mtd><mtd columnalign="left"><mo>=</mo><mi>σ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right"><mover><mi>y</mi><mo accent="true">̇</mo></mover></mtd><mtd columnalign="left"><mo>=</mo><mi>ρ</mi><mi>x</mi><mo>−</mo><mi>y</mi><mo>−</mo><mi>x</mi><mi>z</mi></mtd></mtr><mtr><mtd columnalign="right"><mover><mi>z</mi><mo accent="true">̇</mo></mover></mtd><mtd columnalign="left"><mo>=</mo><mo>−</mo><mi>β</mi><mi>z</mi><mo>+</mo><mi>x</mi><mi>y</mi></mtd></mtr></mtable><annotation encoding="application/x-tex"> 
+            \begin{aligned}
+            \dot{x} &amp; = \sigma(y-x) \\
+            \dot{y} &amp; = \rho x - y - xz \\
+            \dot{z} &amp; = -\beta z + xy
+            \end{aligned}
+        </annotation></semantics></math></p>
+        <h1 data-number="6" id="tables"><span class="header-section-number">6</span> Tables</h1>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>Tables</th>
+        <th style="text-align: center;">Are</th>
+        <th style="text-align: right;">Nice</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>to</td>
+        <td style="text-align: center;">present</td>
+        <td style="text-align: right;">data.</td>
+        </tr>
+        <tr class="even">
+        <td>Aligning</td>
+        <td style="text-align: center;">is</td>
+        <td style="text-align: right;">possible</td>
+        </tr>
+        </tbody>
+        </table>
+        <h1 data-number="7" id="columns"><span class="header-section-number">7</span> Columns</h1>
+        <div class="row">
+        <p>Use markdown syntax to assign html classes and create columns. Eu cillum velit enim magna ipsum amet excepteur. Eiusmod laborum incididunt nisi laborum est eiusmod ut ipsum aute incididunt ullamco eiusmod. In cillum fugiat et Lorem enim cupidatat consectetur Lorem magna duis laboris. Exercitation magna minim cupidatat nulla. In incididunt minim est dolore.</p>
+        <p>For clean content in your document. Magna veniam nostrud et id est mollit laboris consequat non. Ea sint voluptate Lorem aute est nisi dolor id pariatur mollit. Esse in elit duis incididunt labore incididunt consectetur reprehenderit labore nostrud Lorem.</p>
+        </div>
+        <h1 data-number="8" id="sidenotes"><span class="header-section-number">8</span> Sidenotes</h1>
+        <div class="note">
+        <p><strong>Sidenote</strong></p>
+        <p>This is a sidenote. It is a block element and can contain any kind of content. It is always placed on the right side of the page.</p>
+        </div>
+        <p>Side notes float on the right side of the content and can be used to add additional information to the text. They are always placed on the right side of the page.</p>
+        <h1 data-number="9" id="styling"><span class="header-section-number">9</span> <span class="underline smallcaps">Styling</span></h1>
+        <p>Use basic keyword to style text:<br />
+        - <span class="cr">color</span> <span class="cy">different</span> part of the text<br />
+        - or the <span class="bg">background</span> of the text<br />
+        - use <u>underline</u> or <span class="smallcaps">caps</span> as unusual marup</p>
+        <p>Everything can also be described via html elements as well:</p>
+        <p><u>Underlined span.</u></p>
+        <h1 data-number="10" id="references-and-footnotes"><span class="header-section-number">10</span> References and Footnotes</h1>
+        <p>See <a href="https://www.google.de">website</a>.</p>
+        <p>Here is a footnote reference<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and another.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+        <p>Here is an inline note.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+        <p>Veniam veniam est dolor aute quis cupidatat fugiat incididunt quis magna et voluptate id nulla. Eu eiusmod est in quis voluptate tempor pariatur est veniam consectetur eu eu deserunt. Ad labore nulla commodo mollit. Consectetur incididunt ad sit ipsum dolore est amet dolor commodo est et laboris.</p>
+        <p>Blah blah.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+        <section class="footnotes" role="doc-endnotes">
+        <hr />
+        <ol>
+        <li id="fn1" role="doc-endnote"><p>Here is the footnote.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+        <li id="fn2" role="doc-endnote"><p>Here’s a longer footnote with more text.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+        <li id="fn3" role="doc-endnote"><p>Inlines notes are easier to write, since<br />
+        you don’t have to pick an identifier and move down to type the<br />
+        note.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+        <li id="fn4" role="doc-endnote"><p>John Doe, “Frogs,” <em>Journal of Amphibians</em> 44 (1999);<br />
+        Susan Smith, “Flies,” <em>Journal of Insects</em> (2000);<br />
+        Susan Smith, “Bees,” <em>Journal of Insects</em> (2004).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+        </ol>
+        </section>
+      </div>
+
+  
+  <!-- <script src="https://unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script> -->
+  <script src="https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js"></script>
+  <script src="https://home.in.tum.de/~hunecke/md-template/mermaid.js"></script>
+  
+  <script src="https://home.in.tum.de/~hunecke/md-template/template.js"></script>
+
+
+  </body>
+  </html>
